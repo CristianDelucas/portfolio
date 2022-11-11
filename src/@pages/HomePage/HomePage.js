@@ -1,27 +1,21 @@
-import React from 'react'
+import React from "react";
 
 const HomePage = () => {
   return (
-    <section className="my-20  flex flex-wrap items-center justify-center rounded-3xl bg-zinc-900 p-5 lg:flex-row">
-        <div className="flex flex-col px-10 text-white">
-          <p className="text-xxxxl font-bold">
-            CRISTIAN
-            <br />
-            DE LUCAS
-            <br />
-            NOGUERO
-          </p>
-          <h1 className="text-xl ">FRONTEND</h1>
-        </div>
-        <div className="h-80 px-10 text-white">
-          <img
-            className="h-full w-full rounded-full p-5"
-            src="https://randomuser.me/api/portraits/men/70.jpg"
-            alt="logo"
-          />
-        </div>
-      </section>
-  )
-}
+    <section className="flex flex-col  sm:flex-row my-10 items-center justify-center rounded-3xl bg-zinc-900 p-5 ">
+      <div className="flex flex-col text-white ">
+        <p className="w-full text-5xl xl:text-8xl font-bold">CRISTIAN</p>
+        <h1 className="w-full text-2xl md:text-3xl">Desarrollador Frontend</h1>
+      </div>
+      <div className="">
+        <img
+          className="h-full min-h-[300px] w-full min-w-[300px] rounded-full p-5"
+          src="https://randomuser.me/api/portraits/men/70.jpg"
+          alt="logo"
+        />
+      </div>
+    </section>
+  );
+};
 
-export default HomePage
+export default HomePage;
