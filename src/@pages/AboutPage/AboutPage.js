@@ -20,8 +20,7 @@ const AboutPage = () => {
           centrado como desarrollador FRONTEND. Me gusta aprender nuevas
           tecnologías y ponerlas en práctica. Actualmente estoy desarrollando
           una aplicación para la gestión de entrenamientos personales con su
-          seguimiento. En la parte de proyectos podrás echarle un vistazo ¡Un
-          saludo!
+          seguimiento. En la parte de proyectos podrás echarle un vistazo
         </div>
       </div>
     </section>

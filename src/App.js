@@ -1,4 +1,5 @@
 import AboutPage from "./@pages/AboutPage/AboutPage";
+import Contact from "./@pages/Contact/Contact";
 import HomePage from "./@pages/HomePage/HomePage";
 import Projects from "./@pages/Projects/Projects";
 import "./App.css";
@@ -9,6 +10,7 @@ function App() {
       <HomePage/>
       <AboutPage/>
       <Projects/>
+      <Contact/>
     </div>
   );
 }
