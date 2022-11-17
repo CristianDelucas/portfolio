@@ -26,6 +26,7 @@ const Navbar = () => {
 
   return (
     <nav className="trasition-['0.3s ease-in-out'] fixed top-0 left-0 grid h-16 w-full items-center bg-transparent  backdrop-blur-sm md:flex md:flex-row md:justify-end">
+      
       <div className="absolute top-5 left-5 z-20 cursor-pointer outline-none">
         LOGO
       </div>
@@ -40,7 +41,7 @@ const Navbar = () => {
         <Sidebar toggle={toggle} />:'':
         <div className={`bg-slate-500 md:bg-transparent mx-10`} data-aos="zoom-out" >
           <ul className={`gap-15 flex flex-row items-center justify-evenly p-0 text-xl font-bold  md:h-auto md:w-full md:flex-row md:gap-10 `}>
-            <li >
+            <li>
               <a href="#home">Inicio</a>
             </li>
             <li >
