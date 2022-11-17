@@ -4,7 +4,15 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'wave-1': "url('assets/images/backgrounds-waves/wave.svg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
+      fontFamily: {
+        'Barlow': ['Barlow'],
+      }
+    },
     // fontSize: {
     //   sm: '0.8rem',
     //   base: '1rem',
@@ -16,4 +24,5 @@ module.exports = {
     // }
   },
   plugins: [],
+  darkMode: 'class',
 }
