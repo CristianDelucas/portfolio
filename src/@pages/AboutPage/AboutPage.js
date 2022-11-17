@@ -15,13 +15,11 @@ const AboutPage = () => {
             <div className="col-span-2 flex flex-col gap-10 lg:col-span-1">
               <h2 className="text-center text-3xl font-black xl:text-6xl ">Sobre mí</h2>
               <span className="text-xl">
-                En mi carrera como programador de software he manejado
-                diferentes tecnologías y lenguajes de programación, centrado
-                actualmente como desarrollador Frontend. Me gusta aprender
-                nuevas tecnologías y ponerlas en práctica. En estos últimos
-                meses estoy desarrollando una aplicación para la gestión de
-                entrenamientos personales con su seguimiento. En la parte de
-                proyectos podrás echarle un vistazo
+              En mi carrera como programador de software he manejado diferentes
+               tecnologías y lenguajes de programación, centrado actualmente
+                como desarrollador Frontend. Me gusta aprender nuevas tecnologías
+                 y ponerlas en práctica. Podréis ver a continuación los diferentes
+                  proyectos desarrollados con los frameworks y librerías usadas.
               </span>
             </div>
           </div>

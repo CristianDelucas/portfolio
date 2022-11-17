@@ -1,62 +1,69 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Gallery from "../Gallery/Gallery";
 
-const ModalExperiencie = ({isOpen, closeModal}) => {
 
-    const handleModalContainerClick = (e) =>{
-      
-      e.stopPropagation();
-      
-  } 
+const ModalExperiencie = ({ isOpen, closeModal, project }) => {
+  const handleModalContainerClick = (e) => {
+    e.stopPropagation();
+  };
 
-  const handleCloseModal = (e) =>{
-    const element = document.getElementById('modal_content');
-    element.style = "transform: translateY(100px); opacity: 0;"
+  const handleCloseModal = (e) => {
+    const element = document.getElementById("modal_content");
+    element.style = "transform: translateY(100px); opacity: 0;";
 
-    setTimeout(()=>{
-      closeModal()
-    },500)
-    
-  }
+    setTimeout(() => {
+      closeModal();
+    }, 500);
+  };
 
   useEffect(() => {
     Aos.init({ duration: 500 });
   }, []);
 
-
   return (
     <>
-    {isOpen?
-    <div className="fixed top-0 left-0 z-20 flex  h-screen w-full items-center justify-center ease-in-out bg-[#141414d8]"  onClick={handleCloseModal}>
-      <div className="flex max-w-md flex-col flex-wrap bg-[#828583d2] top rounded-lg m-5 shadow-2xl" data-aos="fade-down" id='modal_content'  onClick={handleModalContainerClick}>
-      <nav className="w-full flex justify-between border-b-2 p-3 ">
-                <div className="py-2 select-none">APP JUMANDGYM {"(FITNESS)"}</div>
-                <button className="hover:text-orange-700 font-bold" onClick={handleCloseModal} >X</button>
+      {isOpen ? (
+        <div
+          className="fixed top-0 left-0 bottom-0 right-0 z-20 flex  h-screen w-full items-center justify-center bg-[#141414d8] ease-in-out"
+          onClick={handleCloseModal}
+        >
+          <div
+            className="top m-5 flex max-w-xl flex-col flex-wrap rounded-lg bg-[#828583d2] shadow-2xl w-[90%] overflow-hidden "
+            data-aos="fade-down"
+            id="modal_content"
+            onClick={handleModalContainerClick}
+          >
+            <nav className="flex w-full justify-between border-b-2 p-4 gap-3 leading-loose text-white ">
+              <a href={project.url} className="flex-1 w-full h-8 px-2 select-none rounded-3xl  bg-gray-900 overflow-hidden text-ellipsis cursor-pointer">
+                {project.url}
+              </a>
+              <button
+                className="w-8 h-8 rounded-[100%]    bg-gray-900  font-bold hover:text-orange-700"
+                onClick={handleCloseModal}
+              >
+                X
+              </button>
             </nav>
-        <div className="flex flex-col gap-5 items-center justify-center p-5 ">
-            
-          
-          <div>
-            <img
-              className="h-auto w-60 max-w-full rounded-lg  transition-transform duration-1000   group-hover:rotate-6 group-hover:scale-150"
-              src="https://randomuser.me/api/portraits/men/70.jpg"
-              alt="logo"
-            />
-          </div>
-          <div>
-            Aplicación para gestionar y crear rutinas para los clientes del
-            equipo de JUMANDGYM.
-          </div>
-          <div>
-            <ul>
-              <li>FRONT: REACT</li>
-              <li>BACK: NODE</li>
-            </ul>
+            <div className="flex flex-col items-center justify-center gap-5 p-5 w-full">
+            <Gallery arrayimages={project.images}/>
+              <div>
+              
+              </div>
+              <div>
+                {project.description}
+              </div>
+              <div>
+                <ul>
+                  <li>FRONT: {project.front&& project.front.map((el) => el)}</li>
+                  <li>BACK: {project.back&& project.back.map((el) => el)}</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>:null}
+      ) : null}
     </>
   );
 };
