@@ -1,16 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx,svg}",
   ],
   theme: {
     extend: {
       backgroundImage: {
         'wave-1': "url('assets/images/backgrounds-waves/wave.svg')",
+        'wave-1-dark': "url('assets/images/backgrounds-waves/wave-dark.svg')",
         'footer-texture': "url('/img/footer-texture.png')",
       },
       fontFamily: {
         'Barlow': ['Barlow'],
+        'MrDafoe': ['MrDafoe']
       }
     },
     // fontSize: {

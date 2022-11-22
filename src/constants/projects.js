@@ -6,8 +6,8 @@ const PROJECTS = [{
         images:[
             '/images/web-appjumandgym.png','/images/mobile-appjumandgym.png'
         ],
-        front:['REACT,SASS,TAILWIND'],
-        back:['NODE'],
+        front:['REACT','SASS','HTML'],
+        back:['NODE','VIMEO'],
         services:['VIMEO']
     },
     {
@@ -18,8 +18,8 @@ const PROJECTS = [{
         images:[
             '/images/web-jumandgym.png','/images/mobile-jumandgym.png'
         ],
-        front:['REACT,SASS,TAILWIND'],
-        back:['NODE'],
+        front:['REACT','HTML','SASS'],
+        back:[],
         services:['VIMEO']
     },
     {

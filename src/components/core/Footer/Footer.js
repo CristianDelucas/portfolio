@@ -4,7 +4,7 @@ import {ReactComponent as FooterLogo} from '../../../assets/images/footer-logo.s
 
 const Footer = () => {
   return (
-    <div className=" bg-black px-5 ">
+    <div className=" bg-black px-5 text-base">
       <div className="flex max-w-screen-xl flex-col items-center justify-center  mx-auto gap-12 py-12 text-white">
         <div className="flex w-full flex-row flex-wrap gap-10 justify-around items-center">
           <div className="w-[250px]">
@@ -36,7 +36,7 @@ const Footer = () => {
           
         </div>
 
-        <div className="w-full border-t-[1px] p-4 text-center">
+        <div className="w-full border-t-[1px] p-4 text-center" >
           CRISTIAN DE LUCAS NOGUERO
         </div>
       </div>

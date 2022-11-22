@@ -6,8 +6,8 @@ const Section = ({ title, children, bgColor }) => {
       id={title}
       className={
         title === "home"
-          ? " bg-wave-1 bg-bottom bg-repeat-x"
-          : " bg-[#7bdcb5]"
+          ? " bg-wave-1 bg-bottom bg-repeat-x dark:bg-wave-1-dark"
+          : " bg-emerald-300 dark:bg-emerald-900"
       }
     >
       {children}
