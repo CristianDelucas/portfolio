@@ -2,23 +2,42 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import Content from "../../components/Containers/Content";
 import Section from "../../components/Containers/Section";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
-  } = useForm();
+  } = useForm({
+    defaultValues: { yes_i_understand: false }
+  });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const sendEmail = (formData) => {
+    emailjs
+      .send(
+        "service_8cp9q9q",
+        "template_n4h5ezr",
+        formData,
+        "IEr7R9hflz7F41mcK"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    reset();
   };
 
   return (
-    <Section title="contact">
+    <Section title="contact" >
       <Content>
-      <h2 className="text-center text-5xl font-black xl:text-6xl  ">Contacto</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <h2 className="text-center text-5xl font-black xl:text-6xl  " data-aos="zoom-in">Contacto</h2>
+      <form onSubmit={handleSubmit(sendEmail)} data-aos="zoom-in">
         <div className="mx-auto mb-6 flex max-w-2xl flex-col justify-center text-xl gap-6 py-8">
           <div>
             <label className="mb-2 block  font-medium text-gray-900 dark:text-gray-300">

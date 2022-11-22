@@ -13,7 +13,7 @@ const Gallery = ({ arrayimages }) => {
       </figure>
       <div className="flex snap-mandatory overflow-x-scroll scroll-smooth gap-2 w-full ">
         {arrayimages.map((el,index)=>
-          <div className="min-w-[150px] h-36 snap-start">
+          <div className="min-w-[150px] h-20 snap-start">
             <img className="h-full w-full rounded-lg object-cover cursor-pointer" src={el} alt="ejemplo" onClick={()=>setImage(arrayimages[index])}/>
           </div>
         )}

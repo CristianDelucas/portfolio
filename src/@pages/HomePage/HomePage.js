@@ -26,7 +26,7 @@ const HomePage = () => {
             </h1>
           </div>
           <div>
-            <HomeLogo style={{ width: "100%", height: "auto" }} />
+            <HomeLogo style={{ width: "100%", height: "auto", fill:'text-emerald-900' }} fill={"text-emerald-900"}  color="text-emerald-300" stroke="blue" />
           </div>
         </div>
       </Content>
