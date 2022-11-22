@@ -1,12 +1,58 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import { BsSun } from "react-icons/bs";
+import { MdDarkMode } from "react-icons/md";
 const ThemeToggle = () => {
+  const [theme, setTheme] = useState(
+    window.localStorage.getItem("theme")
+      ? localStorage.getItem("theme")
+      : "light"
+  );
+
+  const handleClick = () => {
+    switch (theme) {
+      case "dark":
+        setTheme("light");
+        break;
+      case "light":
+        setTheme("dark");
+        break;
+      default:
+        setTheme("light");
+        break;
+    }
+  };
+
+  useEffect(() => {
+    switch (theme) {
+      case "dark":
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+        break;
+      case "light":
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+        break;
+      default:
+        localStorage.setItem("theme", "light");
+        break;
+    }
+  }, [theme]);
+
   return (
     <button
       id="theme-toggle"
       type="button"
-      className=" fixed rounded-lg p-2.5 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+      onClick={handleClick}
+      className=" fixed bottom-3 right-3 w-12 rounded-full bg-slate-700 p-2.5  text-sm  text-gray-900  dark:text-gray-400  z-20"
     >
+      {theme === "light" ? (
+        <MdDarkMode
+          style={{ width: "100%", height: "auto", borderRadius: '100%' }}
+          data-aos="zoom-in"
+        />
+      ) : (
+        <BsSun style={{ width: "100%", height: "auto", borderRadius: '100%' }} data-aos="zoom-in" />
+      )}
     </button>
   );
 };

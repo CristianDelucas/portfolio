@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import AboutPage from "./@pages/AboutPage/AboutPage";
 import Contact from "./@pages/Contact/Contact";
 import HomePage from "./@pages/HomePage/HomePage";
@@ -9,10 +9,9 @@ import Footer from "./components/core/Footer/Footer";
 import Navbar from "./components/core/Navbar/Navbar";
 function App() {
 
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex flex-col bg-slate-200 ">
+    <div className="flex flex-col bg-slate-200 dark:bg-slate-800 ">
       {/* -- Navbar -- */}
       <Navbar/>
       {/* -- Navbar -- */}

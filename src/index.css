@@ -7,6 +7,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'MrDafoe';
+  font-weight: 400;
+  src: url('./assets/fonts/MrDafoe-Regular.ttf');
+}
+
+
 @font-face {
   font-family: 'Barlow';
   font-weight: 400;
