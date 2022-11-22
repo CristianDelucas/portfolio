@@ -43,7 +43,7 @@ const ThemeToggle = () => {
       id="theme-toggle"
       type="button"
       onClick={handleClick}
-      className=" fixed bottom-3 right-3 w-12 rounded-full bg-slate-700 p-2.5  text-sm  text-gray-900  dark:text-gray-400  z-20"
+      className=" fixed bottom-3 right-3 w-12 rounded-full bg-slate-600 p-2.5  text-sm  text-gray-900  dark:text-gray-400  z-20"
     >
       {theme === "light" ? (
         <MdDarkMode

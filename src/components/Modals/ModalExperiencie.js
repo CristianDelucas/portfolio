@@ -48,13 +48,10 @@ const ModalExperiencie = ({ isOpen, closeModal, project }) => {
                 X
               </button>
             </nav>
-            <div className="flex flex-col items-center justify-center gap-2 p-5 w-full">
+            <div className="flex flex-col items-center justify-center gap-2 p-5 w-full ">
             <div className="w-full text-center text-lg font-bold ">{project.name}</div>
             <Gallery arrayimages={project.images}/>
-              <div>
-              
-              </div>
-              <div className="w-11/12 font-medium">
+              <div className="w-11/12 font-medium ">
                 {project.description}
               </div>
               <div>
