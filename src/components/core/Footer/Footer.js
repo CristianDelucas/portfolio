@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="flex max-w-screen-xl flex-col items-center justify-center  mx-auto gap-12 py-12 text-white">
         <div className="flex w-full flex-row flex-wrap gap-10 justify-around items-center">
           <div className="w-[250px]">
-            <FooterLogo />
+            <FooterLogo  style={{fill:'#064E3B', stroke:'#064E3B'}}/>
           </div>
 
           <div>

@@ -25,9 +25,8 @@ const HomePage = () => {
               Desarrollador Frontend
             </h1>
           </div>
-          <div>
-            <HomeLogo style={{ width: "100%", height: "auto", fill:'text-emerald-900' }} fill={"text-emerald-900"}  color="text-emerald-300" stroke="blue" />
-          </div>
+          <div><HomeLogo style={{ width: "100%", height: "auto", fill:'#064E3B', stroke:'#064E3B'}}    /></div>
+            
         </div>
       </Content>
     </Section>
