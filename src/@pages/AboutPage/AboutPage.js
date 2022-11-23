@@ -16,7 +16,7 @@ const AboutPage = () => {
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
             >
-              <AboutLogo style={{ width: "100%", height: "auto" }} fill={"red"} stroke="blue"  color="text-emerald-300" />
+              <AboutLogo style={{ width: "100%", height: "auto",fill:'#064E3B', stroke:'#064E3B' }} />
             </div>
             <div className="col-span-2 flex flex-col gap-10 lg:col-span-1" data-aos="fade-right"
               data-aos-offset="300"
