@@ -17,10 +17,10 @@ const Contact = () => {
   const sendEmail = (formData) => {
     emailjs
       .send(
-        "service_8cp9q9q",
-        "template_n4h5ezr",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         formData,
-        "IEr7R9hflz7F41mcK"
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
