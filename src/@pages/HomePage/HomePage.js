@@ -1,5 +1,6 @@
 import Aos from "aos";
 import React, { useEffect } from "react";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { ReactComponent as HomeLogo } from "../../assets/images/home-logo.svg";
 import Content from "../../components/Containers/Content";
 import Section from "../../components/Containers/Section";
@@ -12,7 +13,7 @@ const HomePage = () => {
     <Section title={"home"}>
       <Content>
         <div
-          className="my-10 flex  flex-col items-center justify-center rounded-3xl p-5 sm:flex-row text-slate-900 dark:text-slate-100"
+          className="my-10 flex flex-col items-center justify-center rounded-3xl p-5 sm:flex-row text-slate-900 dark:text-slate-100"
           id="home"
           data-aos="zoom-in"
         >
@@ -26,7 +27,26 @@ const HomePage = () => {
             </h1>
           </div>
           <div><HomeLogo style={{ width: "100%", height: "auto", fill:'#064E3B', stroke:'#064E3B'}}    /></div>
-            
+        </div>
+        <div className="flex items-center justify-center gap-4">
+        <ul className="flex flex-row gap-10">
+                <li>
+                    <a href="https://www.linkedin.com/in/cristian-de-lucas-noguero-51a952197" className="flex items-start items-center" target="_blank" rel="noreferrer">
+                        <button className="bg-white rounded-full p-2"><AiFillLinkedin className="w-7 h-7 fill-black" /></button>
+                        <div className="ml-2">
+                            <h6 className="text-gray-900 dark:text-gray-300 text-xl font-semibold">Linkedin</h6>
+                    </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/CristianDelucas" className="flex items-start items-center " target="_blank" rel="noreferrer">
+                        <button className="bg-white rounded-full p-2"><AiFillGithub className="w-7 h-7 fill-black" /></button>
+                        <div className="ml-2">
+                            <h6 className="text-gray-900 dark:text-gray-300 text-xl font-semibold">Github</h6>
+                    </div>
+                    </a>
+                </li>
+            </ul>
         </div>
       </Content>
     </Section>
