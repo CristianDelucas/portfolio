@@ -13,7 +13,7 @@ const HomePage = () => {
     <Section title={"home"}>
       <Content>
         <div
-          className="my-10 flex flex-col items-center justify-center rounded-3xl p-5 sm:flex-row text-slate-900 dark:text-slate-100"
+          className="my-10 flex flex-col items-center justify-center rounded-3xl p-5 text-slate-900 dark:text-slate-100 sm:flex-row"
           id="home"
           data-aos="zoom-in"
         >
@@ -23,30 +23,57 @@ const HomePage = () => {
             </p>
             <p className="w-full text-5xl font-bold xl:text-8xl ">CRISTIAN</p>
             <h1 className="w-full text-2xl md:text-3xl">
-              Desarrollador Frontend
+              Desarrollador Fullstack
             </h1>
           </div>
-          <div><HomeLogo style={{ width: "100%", height: "auto", fill:'#064E3B', stroke:'#064E3B'}}    /></div>
+          <div>
+            <HomeLogo
+              style={{
+                width: "100%",
+                height: "auto",
+                fill: "#064E3B",
+                stroke: "#064E3B",
+              }}
+            />
+          </div>
         </div>
         <div className="flex items-center justify-center gap-4">
-        <ul className="flex flex-row gap-10">
-                <li>
-                    <a href="https://www.linkedin.com/in/cristian-de-lucas-noguero-51a952197" className="flex items-start items-center" target="_blank" rel="noreferrer">
-                        <button className="bg-white rounded-full p-2"><AiFillLinkedin className="w-7 h-7 fill-black" /></button>
-                        <div className="ml-2">
-                            <h6 className="text-gray-900 dark:text-gray-300 text-xl font-semibold">Linkedin</h6>
-                    </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/CristianDelucas" className="flex items-start items-center " target="_blank" rel="noreferrer">
-                        <button className="bg-white rounded-full p-2"><AiFillGithub className="w-7 h-7 fill-black" /></button>
-                        <div className="ml-2">
-                            <h6 className="text-gray-900 dark:text-gray-300 text-xl font-semibold">Github</h6>
-                    </div>
-                    </a>
-                </li>
-            </ul>
+          <ul className="flex flex-row gap-10">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/cristian-de-lucas-noguero-51a952197"
+                className="flex items-start items-center"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="rounded-full bg-white p-2">
+                  <AiFillLinkedin className="h-7 w-7 fill-black" />
+                </button>
+                <div className="ml-2">
+                  <h6 className="text-xl font-semibold text-gray-900 dark:text-gray-300">
+                    Linkedin
+                  </h6>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/CristianDelucas"
+                className="flex items-start items-center "
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="rounded-full bg-white p-2">
+                  <AiFillGithub className="h-7 w-7 fill-black" />
+                </button>
+                <div className="ml-2">
+                  <h6 className="text-xl font-semibold text-gray-900 dark:text-gray-300">
+                    Github
+                  </h6>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </Content>
     </Section>

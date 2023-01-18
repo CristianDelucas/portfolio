@@ -16,23 +16,33 @@ const AboutPage = () => {
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
             >
-              <AboutLogo style={{ width: "100%", height: "auto",fill:'#064E3B', stroke:'#064E3B' }} />
+              <AboutLogo
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  fill: "#064E3B",
+                  stroke: "#064E3B",
+                }}
+              />
             </div>
-            <div className="col-span-2 flex flex-col gap-10 lg:col-span-1" data-aos="fade-right"
+            <div
+              className="col-span-2 flex flex-col gap-10 lg:col-span-1"
+              data-aos="fade-right"
               data-aos-offset="300"
-              data-aos-easing="ease-in-sine">
+              data-aos-easing="ease-in-sine"
+            >
               <h2 className="text-center text-5xl font-black xl:text-6xl ">
                 Sobre mí
               </h2>
               <span className="text-xl">
                 En mi carrera como programador de software he manejado
                 diferentes tecnologías y lenguajes de programación, centrado
-                actualmente como desarrollador Frontend. Me gusta aprender
+                actualmente como desarrollador Fullstack. Me gusta aprender
                 nuevas tecnologías y ponerlas en práctica. Podréis ver a
                 continuación los diferentes proyectos desarrollados con los
                 frameworks y librerías usadas.
               </span>
-              <Skills/>
+              <Skills />
             </div>
           </div>
         </Content>

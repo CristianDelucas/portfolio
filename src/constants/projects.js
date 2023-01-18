@@ -1,5 +1,19 @@
 const PROJECTS = [
   {
+    name: "👟 SNEAKERS",
+    url: "https://sneakers-webapp.netlify.app/",
+    miniature: "/images/sneakers/multiresponsive-sneakers.png",
+    description: "E-COMMERCE de zapatillas (EN DESARROLLO)",
+    images: [
+      "/images/sneakers/multiresponsive-sneakers.png",
+      "/images/sneakers/web-sneakers-productpage.png",
+      "/images/sneakers/mobile-sneakers-productpage.png",
+    ],
+    front: ["REACT", "CSS", "HTML", "SASS"],
+    back: [],
+    services: [],
+  },
+  {
     name: "📱 TWITTAD",
     url: "http://twittad.vercel.app/",
     miniature: "/images/twittad/web-twittad.png",
@@ -19,10 +33,21 @@ const PROJECTS = [
   {
     name: "📱 APP JUM&GYM",
     url: "https://appjumandgym.netlify.app",
-    miniature: "/images/web-appjumandgym.png",
+    miniature: "/images/appjumandgym/multiresponsive-appjumandgym.png",
     description:
       "Aplicación para gestionar y crear rutinas para los clientes del equipo de JUMANDGYM.",
-    images: ["/images/web-appjumandgym.png", "/images/mobile-appjumandgym.png"],
+    images: [
+      "/images/appjumandgym/multiresponsive-appjumandgym.png",
+      "/images/appjumandgym/web-appjumandgym-login.png",
+      "/images/appjumandgym/web-appjumandgym-dashboard.png",
+      "/images/appjumandgym/web-appjumandgym-routine.png",
+      "/images/appjumandgym/web-appjumandgym-adminuser.png",
+      "/images/appjumandgym/web-appjumandgym-exerciseadmin.png",
+      "/images/appjumandgym/mobile-appjumandgym-exercise.png",
+      "/images/appjumandgym/web-appjumandgym-exercise.png",
+      "/images/appjumandgym/mobile-appjumandgym-multimedia.png",
+      "/images/appjumandgym/web-appjumandgym-video.png",
+    ],
     front: ["REACT", "SASS", "HTML"],
     back: ["NODE", "VIMEO"],
     services: ["VIMEO"],
@@ -31,10 +56,15 @@ const PROJECTS = [
   {
     name: "🌏 WEB JUM&GYM",
     url: "https://jumandgym.netlify.app",
-    miniature: "/images/web-jumandgym.png",
+    miniature: "/images/jumandgym/multiresponsive-jumandgym.png",
     description:
       "Página web del equipo de JUMANDGYM donde podrás conocerlos y ver los servicios que puedes contratar.",
-    images: ["/images/web-jumandgym.png", "/images/mobile-jumandgym.png"],
+    images: [
+      "/images/jumandgym/multiresponsive-jumandgym.png",
+      "/images/jumandgym/web-jumandgym.png",
+      "/images/jumandgym/mobile-jumandgym.png",
+      "/images/jumandgym/tablet-jumandgym.png",
+    ],
     front: ["REACT", "HTML", "SASS"],
     back: [],
     services: ["VIMEO"],
